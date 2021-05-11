@@ -36,6 +36,7 @@ public class PostsRepositoryTest {
                 .author(author)
                 .build();
 
+
 //        System.out.println(post.getTitle());
 
         repository.save(post);
@@ -49,7 +50,7 @@ public class PostsRepositoryTest {
 
     @Test
     public void 글수정(){
-        Long id=1L;
+//        Long id=1L;
         String title="test title";
         String content="test content";
         String author="test author";
