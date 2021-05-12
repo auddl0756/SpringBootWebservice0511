@@ -1,5 +1,6 @@
 package com.roon.board.domain.posts;
 
+import com.roon.board.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {     //시간 기록용인 BaseTimeEntity 상속. 공통 필드(생성/수정 시간) 있는 상위 클래스
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
